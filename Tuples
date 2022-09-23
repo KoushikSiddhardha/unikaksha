@@ -1,0 +1,30 @@
+#add an item
+tuplex = (4, 6, 2, 8, 3, 1) 
+print(tuplex)
+tuplex = tuplex + (9,)
+print(tuplex)
+tuplex = tuplex[:5] + (15, 20, 25) + tuplex[:5]
+print(tuplex)
+listx = list(tuplex) 
+listx.append(30)
+tuplex = tuple(listx)
+print(tuplex)
+
+
+#length of a tuple
+tuplex = tuple(input())
+print(tuplex)
+print(len(tuplex))
+
+
+#reverse a tuple
+x = input()
+y = reversed(x)
+print(tuple(y))
+
+
+#repeated element in a tuple
+n= int(input())
+tp=(2,4,5,6,2,3,4,4,7)
+print(tp)
+print(tp.count(n))
